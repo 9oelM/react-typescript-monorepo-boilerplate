@@ -28,7 +28,7 @@
     "@types/lodash.flow": "3.5.6",
     "@types/react": "17.0.30",
     "@types/react-dom": "17.0.11",
-    "@types/webpack-dev-server": "3.11.4",
+    "@types/webpack-dev-server": "3.11.6",
     "@wojtekmaj/enzyme-adapter-react-17": "0.6.3",
     "babel-loader": "8.2.2",
     "circular-dependency-plugin": "5.2.2",
@@ -44,7 +44,7 @@
     "wait-for-expect": "3.0.2",
     "webpack": "5.58.2",
     "webpack-cli": "4.9.1",
-    "webpack-dev-server": "3.11.2"
+    "webpack-dev-server": "3.11.3"
   },
   "dependencies": {
     "axios": "^0.21.1",
