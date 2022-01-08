@@ -35,7 +35,7 @@
     "dotenv-webpack": "7.0.3",
     "enzyme": "3.11.0",
     "fork-ts-checker-webpack-plugin": "6.2.10",
-    "html-webpack-plugin": "5.3.1",
+    "html-webpack-plugin": "5.4.0",
     "jest": "27.0.4",
     "ts-jest": "27.0.7",
     "ts-loader": "9.2.3",
