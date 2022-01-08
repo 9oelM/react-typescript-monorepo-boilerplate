@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.15.8",
-    "@jest/types": "27.0.2",
+    "@jest/types": "27.4.2",
     "@storybook/addon-a11y": "6.3.12",
     "@storybook/addon-actions": "6.3.12",
     "@storybook/addon-essentials": "6.3.12",
@@ -36,7 +36,7 @@
     "enzyme": "3.11.0",
     "fork-ts-checker-webpack-plugin": "6.5.0",
     "html-webpack-plugin": "5.4.0",
-    "jest": "27.0.4",
+    "jest": "27.4.7",
     "ts-jest": "27.0.7",
     "ts-loader": "9.2.3",
     "ts-node": "10.0.0",
