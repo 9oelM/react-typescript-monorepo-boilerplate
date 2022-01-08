@@ -14,7 +14,7 @@
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@babel/core": "7.14.3",
+    "@babel/core": "7.15.8",
     "@jest/types": "27.0.2",
     "@storybook/addon-a11y": "6.3.12",
     "@storybook/addon-actions": "6.3.12",
