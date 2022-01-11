@@ -34,6 +34,8 @@ module.exports = {
     // https://stackoverflow.com/questions/67070802/webpack-5-and-storybook-6-integration-throws-an-error-in-defineplugin-js
     config.resolve.fallback = {
       http: false,
+      path: false,
+      crypto: false,
     }
 
     return config;

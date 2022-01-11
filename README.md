@@ -7,12 +7,12 @@ The configs include the basic things I use for any of my projects. They're opini
 
 # Included in the box
 - [x] eslint (+ prettier) autofix as you save on VSCode
-- [x] monorepo using npm v7 workspaces
-- [x] webpack configs in Typescript
+- [x] monorepo using npm v7+ workspaces
+- [x] webpack and its configs in Typescript
 - [x] jest config in Typescript
 - [x] jest + enzyme
 - [x] react + typescript + basic utils
 - [x] storybook
 - [x] npm
-
+- [x] nvmrc (currently 16.x)
 
