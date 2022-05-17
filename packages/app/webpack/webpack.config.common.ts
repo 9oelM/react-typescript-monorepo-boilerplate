@@ -7,13 +7,13 @@ export const commonConfig: webpack.Configuration = {
   // https://webpack.js.org/plugins/split-chunks-plugin/
   optimization: {
     splitChunks: {
-      chunks: `async`,
-      minSize: 20000,
-      minRemainingSize: 0,
+      chunks: `all`,
+      minSize: 500,
+      // minRemainingSize: 0,
       minChunks: 1,
       maxAsyncRequests: 30,
       maxInitialRequests: 30,
-      enforceSizeThreshold: 50000,
+      // enforceSizeThreshold: 50000,
       cacheGroups: {
         defaultVendors: {
           test: /[\\/]node_modules[\\/]/,
@@ -35,16 +35,22 @@ export const commonConfig: webpack.Configuration = {
         use: `ts-loader`,
         exclude: /node_modules/,
       },
+      {
+        test: /\.css?$/,
+        use: [`style-loader`, `css-loader`],
+      },
     ],
   },
   resolve: {
     extensions: [`.tsx`, `.ts`, `.js`],
   },
   output: {
-    filename: `bundle.js`,
+    filename: `[chunkhash].[name].js`,
     path: path.resolve(__dirname, `dist`),
   },
   plugins: [
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     new HtmlWebpackPlugin({
       template: path.join(__dirname, `..`, `public`, `index.html`),
     }),
