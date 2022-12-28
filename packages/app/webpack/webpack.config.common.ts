@@ -31,8 +31,8 @@ export const commonConfig: webpack.Configuration = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        use: `ts-loader`,
+        test: /\.([jt]sx?)?$/,
+        use: `swc-loader`,
         exclude: /node_modules/,
       },
       {
@@ -43,6 +43,9 @@ export const commonConfig: webpack.Configuration = {
   },
   resolve: {
     extensions: [`.tsx`, `.ts`, `.js`],
+    alias: {
+      src: path.resolve(__dirname, `..`, `src`),
+    },
   },
   output: {
     filename: `[chunkhash].[name].js`,

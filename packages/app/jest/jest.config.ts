@@ -5,6 +5,12 @@ const config: Config.InitialOptions = {
   rootDir: `..`,
   setupFiles: [`<rootDir>/jest/setupTest.js`],
   preset: `ts-jest`,
+  transform: {
+    "^.+\\.tsx?$": `ts-jest`,
+  },
   testEnvironment: `jsdom`,
+  moduleNameMapper: {
+    "src/(.*)": `<rootDir>/src/$1`,
+  },
 }
 export default config

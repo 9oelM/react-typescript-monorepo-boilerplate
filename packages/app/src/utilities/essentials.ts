@@ -1,5 +1,5 @@
 import { FC, memo } from "react"
-import { withErrorBoundary } from "../components/Util/WithErrorBoundary"
+import { withErrorBoundary } from "src/components/Util/WithErrorBoundary"
 import flow from "lodash.flow"
 
 export const enhance: <Props>(
