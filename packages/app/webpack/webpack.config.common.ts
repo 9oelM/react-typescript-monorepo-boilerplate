@@ -9,11 +9,9 @@ export const commonConfig: webpack.Configuration = {
     splitChunks: {
       chunks: `all`,
       minSize: 500,
-      // minRemainingSize: 0,
       minChunks: 1,
       maxAsyncRequests: 30,
       maxInitialRequests: 30,
-      // enforceSizeThreshold: 50000,
       cacheGroups: {
         defaultVendors: {
           test: /[\\/]node_modules[\\/]/,
@@ -49,13 +47,16 @@ export const commonConfig: webpack.Configuration = {
   },
   output: {
     filename: `[chunkhash].[name].js`,
-    path: path.resolve(__dirname, `dist`),
+    path: path.resolve(__dirname, `..`, `dist`),
   },
   plugins: [
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     new HtmlWebpackPlugin({
       template: path.join(__dirname, `..`, `public`, `index.html`),
+    }),
+    new webpack.optimize.SplitChunksPlugin({
+      chunks: `all`,
     }),
   ],
 }
